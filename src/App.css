@@ -1,0 +1,146 @@
+.App {
+  text-align: center;
+  color:white;
+  background:linear-gradient(#93cacc,#338a8c);
+  min-height:100vh;
+  position:relative;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 50px;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.App-header > h1, h2, h3 {
+  margin:0px;
+}
+
+footer {
+  /* text-align:right; */
+  position:fixed;
+  bottom:0;
+  left:50%;
+  transform:translateX(-50%);
+}
+
+.gitLogo {
+  max-width:40px;
+  position:absolute;
+  bottom:0;
+  left:0;
+}
+
+.gameWrapper {
+  display:flex;
+  align-items: center;
+  min-height:80vh;
+  justify-content: center;
+  padding-top:40px;
+  position:relative;
+  color:black;
+}
+
+.boardWrapper {
+  border:solid #282c34;
+  border-radius: 4px;
+  padding:20px;
+  background:cadetblue;
+  position:relative;
+}
+
+.boardRow{
+  display:flex;
+}
+
+.gameButton {
+  background:white;
+  border:1px solid lightblue;
+  min-width:50px;
+  min-height:50px;
+  font-weight: bold;
+  font-size:large;
+
+}
+
+.gameButton:hover{
+  background:#ccc;
+}
+
+.endScreen {
+  opacity:0.8;
+  color:black;
+  position:absolute;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  z-index:2;
+}
+
+
+.interfaceWrapper {
+  font-weight:bold;
+}
+
+.controlButton {
+  height:25px;
+  padding:10px;
+}
+
+.controlButton:hover{
+  background:rgba(100,100,255,0.5);
+}
+
+.sidebarButton {
+  position:absolute;
+  z-index:5;
+  right:0;
+  top:0;
+  height:50px;
+  transform:translate(-50%,50%);
+}
+
+.sidebarWrapper{
+  position:absolute;
+  right:0;
+  top:0;
+  height:100%;
+  width:20vw;
+  background:#1cafb3;
+  border-left:solid #1c6a6a 2px;
+  transition:0.5s;
+  opacity:1;
+  color:white;
+}
+
+.sidebarClosed {
+  width:10vw;
+  visibility:hidden;
+  opacity:0;
+}
+
+.sidebarClosed * {
+  display:none;
+}
+
+.sidebarInside {
+  position:relative;
+  width:100%;
+  height:100%;
+}
+
+.sidebarGamesWrapper {
+  text-align:left;
+  list-style: none;
+  font-weight:bold;
+  overflow-y:scroll;
+  max-height:80%;
+  cursor:pointer;
+  scrollbar-width:thin;
+  scrollbar-color:teal lightblue;
+}
